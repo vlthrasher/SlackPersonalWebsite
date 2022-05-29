@@ -14,8 +14,8 @@
 .headerBar {
   display: flex;
   position: sticky;
-  background-color: #3a2bff;
+  background-color: #351d37;
   width: 100%;
-  max-height: 10%;
+  max-height: 6%;
 }
 </style>

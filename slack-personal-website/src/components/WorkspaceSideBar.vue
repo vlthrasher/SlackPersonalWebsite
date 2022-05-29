@@ -14,10 +14,10 @@
 .workspaceSideBar {
   display: flex;
   position: sticky;
-  background-color: #3e0e00;
-  max-width: 10%;
+  background-color: #3e0e40;
+  max-width: 6%;
   height: 100%;
-  overflow-x: clip;
-  overflow-y: scroll;
+  border-color: #573f57;
+  border-width: 1px 1px 0px 0px;
 }
 </style>

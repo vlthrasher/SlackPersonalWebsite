@@ -27,10 +27,10 @@ defineProps<{
   display: flex;
   flex-flow: row;
   background-color: #3e0e40;
-  max-width: 30%;
+  max-width: 20%;
   height: 100%;
-  overflow-x: clip;
-  overflow-y: scroll;
+  border-color: #573f57;
+  border-width: 1px 1px 0px 0px;
 }
 
 h1 {
