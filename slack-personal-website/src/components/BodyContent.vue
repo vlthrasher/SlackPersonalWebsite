@@ -1,25 +1,25 @@
 <script setup lang="ts">
-import HeaderBar from "./components/HeaderBar.vue";
-import BodyContent from "./components/BodyContent.vue";
+import WorkspaceSideBar from "./WorkspaceSideBar.vue";
+import SideBar from "./SideBar.vue";
 </script>
 
 <template>
-  <HeaderBar />
-  <BodyContent />
+  <div class="bodyContent">
+    <WorkspaceSideBar />
+    <SideBar msg="You did it!" />
+  </div>
 </template>
 
-<style>
-@import "./assets/base.css";
-
+<style scoped>
 body {
   display: flex;
   place-items: center;
 }
 
-#app {
+.bodyContent {
   display: flex;
   flex: 1;
-  flex-flow: column;
+  flex-flow: row;
   align-self: stretch;
   justify-content: flex-start;
 }

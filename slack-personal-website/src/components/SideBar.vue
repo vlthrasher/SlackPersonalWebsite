@@ -25,7 +25,12 @@ defineProps<{
 <style scoped>
 .sidebar {
   display: flex;
+  flex-flow: row;
   background-color: #3e0e40;
+  max-width: 30%;
+  height: 100%;
+  overflow-x: clip;
+  overflow-y: scroll;
 }
 
 h1 {
