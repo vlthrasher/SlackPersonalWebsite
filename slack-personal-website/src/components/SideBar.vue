@@ -24,10 +24,8 @@ defineProps<{
   height: 100%;
   border-color: #573f57;
   border-width: 1px 1px 0px 0px;
-}
-
-img {
-
+  z-index: -1;
+  position: sticky;
 }
 
 h1 {
