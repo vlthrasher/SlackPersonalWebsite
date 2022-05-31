@@ -6,13 +6,6 @@ defineProps<{
 
 <template>
   <div class="sidebar">
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="../assets/logo.svg"
-      width="125"
-      height="125"
-    />
     <h1 class="green">{{ msg }}</h1>
     <h3>
       You’ve successfully created a project with
@@ -31,6 +24,10 @@ defineProps<{
   height: 100%;
   border-color: #573f57;
   border-width: 1px 1px 0px 0px;
+}
+
+img {
+
 }
 
 h1 {
