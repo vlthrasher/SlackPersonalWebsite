@@ -6,21 +6,16 @@ defineProps<{
 
 <template>
   <div class="sidebar">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a target="_blank" href="https://vitejs.dev/">Vite</a> +
-      <a target="_blank" href="https://vuejs.org/">Vue 3</a>.
-    </h3>
+    <h1>Vicky Thrasher</h1>
   </div>
 </template>
 
 <style scoped>
 .sidebar {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   background-color: #3e0e40;
-  max-width: 20%;
+  width: 250px;
   height: 100%;
   border-color: #573f57;
   border-width: 1px 1px 0px 0px;
@@ -28,18 +23,15 @@ defineProps<{
   position: sticky;
 }
 
+.sidebar > * {
+  padding: 10px 20px;
+}
+
 h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  top: -10px;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: left;
+  color: white;
+  border-bottom-width: 1px;
+  border-color: #573f57;
+  font-weight: bold;
+  font-size: 25px;
 }
 </style>

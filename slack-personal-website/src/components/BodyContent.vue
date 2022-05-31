@@ -37,13 +37,6 @@ header {
   margin: 0 2rem 0 0;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
 a:hover {
   background-color: hsla(160, 100%, 37%, 0.2);
 }
