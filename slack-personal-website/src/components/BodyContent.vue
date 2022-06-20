@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import WorkspaceSideBar from "./WorkspaceSideBar.vue";
 import SideBar from "./SideBar.vue";
+
+function log() {
+  console.log("Body Content clicked");
+}
 </script>
 
 <template>
