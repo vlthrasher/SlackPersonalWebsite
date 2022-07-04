@@ -9,12 +9,21 @@ export default {
 </script>
 
 <template>
-  <button class="channel" :class="{active: selected}" @click="selectChannel(id)">{{id}}</button>
+  <div class="channel" :class="{active: selected}" @click="selectChannel(id)">
+    <div class="hashtag">#</div>
+    <button>{{id}}</button>
+  </div>
 </template>
 
 <style scoped>
 .channel {
-  padding: 10px 35px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.channel > .hashtag {
+  margin-right: 15px;
 }
 
 .active {

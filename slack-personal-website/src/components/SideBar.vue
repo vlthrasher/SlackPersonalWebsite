@@ -64,7 +64,7 @@ export default {
   width: 100%;
 }
 
-.sidebar > h1,h2 {
+.sidebar > * {
   padding: 10px 20px;
 }
 
