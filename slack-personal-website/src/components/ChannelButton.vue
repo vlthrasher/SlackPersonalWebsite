@@ -22,10 +22,6 @@ export default {
   align-items: center;
 }
 
-.channel > .hashtag {
-  margin-right: 15px;
-}
-
 .active {
   color: white;
   background-color: #1064a3;

@@ -1,8 +1,10 @@
 <script lang="ts">
 import ChannelButton from "./ChannelButton.vue";
+import ChannelHeader from "./ChannelHeader.vue";
 export default {
   components: {
-    ChannelButton
+    ChannelButton,
+    ChannelHeader,
   },
   data() {
     return {
@@ -33,7 +35,10 @@ export default {
 <template>
   <div class="sidebar">
     <h1>Vicky Thrasher</h1>
-    <h2 @click="toggleChannels">Channels</h2>
+    <ChannelHeader
+      :toggleChannels="toggleChannels"
+      :showChannels="showChannels"
+      />
     <template v-for="channel in channels">
       <ChannelButton
         v-if="showChannels || selectedChannel === channel.id"
@@ -62,11 +67,28 @@ export default {
 .sidebar > * {
   text-align: start;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  user-select: none;
 }
 
-.sidebar > * {
-  padding: 10px 20px;
+.sidebar *:not(h1) {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
+.sidebar *:not(h1) > :nth-child(1) {
+  border-radius: 4px;
+  width: 1.75em;
+  height: 1.75em;
+  line-height: 1.75em;
+  text-align: center;
+}
+
+.sidebar *:not(h1) :nth-child(2) {
+  padding-left: 5px;
+}
+
 
 h1 {
   color: white;
@@ -74,5 +96,7 @@ h1 {
   border-color: #573f57;
   font-weight: bold;
   font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 </style>
